@@ -5,8 +5,9 @@ console.log(idInput);
 console.log(colorInput);
 
 function setCard() {
-const card = document.querySelector(`#${idInput.value}`);
-  console.log(card);
+    const card = document.querySelector(`#${idInput.value}`);
+    console.log(card);
+    card.style.color = colorInput.value;
 }
 
 document.querySelector("#editCardButton").addEventListener("click", setCard);
